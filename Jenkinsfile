@@ -10,19 +10,20 @@ pipeline {
 
         stage('Install') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'npm test || true'
+                // テスト失敗でも落とさないなら「|| exit 0」を追記
+                bat 'npm test || exit 0'
             }
         }
     }
