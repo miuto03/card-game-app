@@ -213,13 +213,6 @@ const useGameStore = create((set) => ({
     showAlert: false 
   })),
 
-  startTurn: () => set((state) => ({
-    ...state,
-    mana: Math.min(state.mana + 1, state.maxMana),  // Increment mana
-    showAlert: true,
-    alertMessage: 'ターンが開始されました。マナが回復しました。',
-    currentPhase: PHASES.DRAW,  // Set phase to DRAW
-  })),
 }));
 
 export default useGameStore;

@@ -4,7 +4,7 @@ import PlayerZoneContainer from './PlayerZone';
 import EnemyZone from './EnemyZone';
 import ActionButtons from './ActionButtons';
 import { useGameStore } from '../stores/index.js';
-import { PHASES, PHASE_NAMES } from '../stores/constants';
+import { PHASE_NAMES } from '../stores/constants';
 
 const Layout = () => {
   const { 

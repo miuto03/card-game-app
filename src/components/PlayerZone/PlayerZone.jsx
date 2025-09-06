@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Typography, Card, CardContent, Button, Fade } from "@mui/material";
+import { Box, Typography, Card, CardContent, Button, Fade } from "@mui/material";
 import { PHASES } from '../../stores/constants';
 
 const PlayerZone = ({
