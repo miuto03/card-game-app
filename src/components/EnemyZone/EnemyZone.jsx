@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Card, CardContent, Typography, Button, Fade, Collapse } from '@mui/material';
+import { Box, Card, CardContent, Typography, Fade } from '@mui/material';
 import { keyframes } from '@mui/system';
 
 // 消滅エフェクトのアニメーション定義
